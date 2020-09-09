@@ -43,6 +43,15 @@ namespace _3_DataTypeAndVariablesChallenge
 
           string numText = "1234";
           Console.WriteLine(Text2Num(numText));
+
+          decimal myDecimal = 0.2M;
+          Console.WriteLine(myDecimal);
+
+          long myLong = -9223372036854775808;
+          Console.WriteLine(myLong);
+          
+          ulong myULong = 18446744073709551615;
+          Console.WriteLine(myULong);
       }
 
       public static int Text2Num(string numText)
