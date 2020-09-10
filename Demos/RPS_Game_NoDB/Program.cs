@@ -120,8 +120,6 @@ namespace RPS_Game_NoDB
                         computer.record["wins"]++;//increments wins and losses.
                     }
 
-                    //game.winner.Name = "mark";//placeholder to escape loop during testing.
-
 
                 }//end of rounds loop
 
@@ -157,29 +155,12 @@ namespace RPS_Game_NoDB
 
         public static void PrintAllCurrentData(List<Game> games, List<Player> players, List<Round> rounds)
         {  
-            Console.WriteLine("\n___________________________________________\n");
+            Console.WriteLine("\n___________________GAMES_______________________\n");
             Game.printGames(games);
+            Console.WriteLine("\n___________________PLAYERS_______________________\n");
             Player.printPlayers(players);
+            Console.WriteLine("\n___________________ROUNDS_______________________\n");
             Round.printRounds(rounds);
-
-            // foreach (var game in games)
-            // {
-            //     System.Console.WriteLine($"Player1 Name => {game.Player1.Name}\ncomputer Name => {game.Computer.Name}\n winner is => {game.winner.Name}");
-            //     System.Console.WriteLine($"\t--- Here are the games rounds --- ");
-            //     foreach (Round round in game.rounds)
-            //     {
-            //         System.Console.WriteLine($"player1 => {round.player1.Name}, p1 choice => {round.p1Choice}");
-            //         System.Console.WriteLine($"player2 => {round.Computer.Name}, computer choice => {round.ComputerChoice}");
-            //         System.Console.WriteLine($"the Outcome of this round is =>{round.Outcome}");
-
-
-            //     }
-            // }
-            // System.Console.WriteLine("Here is the list of players.");
-            // foreach (var player in players)
-            // {
-            //     System.Console.WriteLine($"This players nasme is {player.Name} and he has {player.record["wins"]} wins and {player.record["losses"]} losses");
-            // }
 
         }
 
