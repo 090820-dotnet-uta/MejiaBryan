@@ -11,7 +11,7 @@ namespace HelloWorldDemo
             // Console.WriteLine("What is your name?");
             // name = Console.ReadLine();
             // Console.WriteLine($"Hello {name}!");
-            // Console.WriteLine("Hello {0}!", name);
+            Console.WriteLine("Hello {0}!", name);
 
             Player p1 = new Player();
             // Func<> print = Console.WriteLine;
